@@ -28,27 +28,9 @@ MCP server for [Enduraw](https://app.enduraw.co). Unofficial community MCP wrapp
 claude mcp add enduraw -e ENDURAW_ACCESS_TOKEN=your_jwt_token -- npx -y github:jeanpch/enduraw-MCP
 ```
 
-### Claude Desktop
+### Claude Desktop, Cursor, Windsurf & Antigravity
 
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
-
-```json
-{
-  "mcpServers": {
-    "enduraw": {
-      "command": "npx",
-      "args": ["-y", "github:jeanpch/enduraw-MCP"],
-      "env": {
-        "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
-      }
-    }
-  }
-}
-```
-
-### Cursor
-
-Add to `.cursor/mcp.json` in your project root or Cursor MCP settings:
+Add the following server entry to your client's MCP configuration file:
 
 ```json
 {
@@ -64,41 +46,12 @@ Add to `.cursor/mcp.json` in your project root or Cursor MCP settings:
 }
 ```
 
-### Windsurf
-
-Add to `~/.codeium/windsurf/mcp_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "enduraw": {
-      "command": "npx",
-      "args": ["-y", "github:jeanpch/enduraw-MCP"],
-      "env": {
-        "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
-      }
-    }
-  }
-}
-```
-
-### Antigravity
-
-Add to `~/.gemini/config/mcp_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "enduraw": {
-      "command": "npx",
-      "args": ["-y", "github:jeanpch/enduraw-MCP"],
-      "env": {
-        "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
-      }
-    }
-  }
-}
-```
+| Client | Configuration file |
+|---|---|
+| **Claude Desktop** | `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) · `%APPDATA%\Claude\claude_desktop_config.json` (Windows) |
+| **Cursor** | `.cursor/mcp.json` (project root) or Cursor MCP settings |
+| **Windsurf** | `~/.codeium/windsurf/mcp_config.json` |
+| **Antigravity** | `~/.gemini/config/mcp_config.json` |
 
 ### Any MCP Client
 
