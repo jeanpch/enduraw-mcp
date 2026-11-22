@@ -25,7 +25,7 @@ MCP server for [Enduraw](https://app.enduraw.co). Unofficial community MCP wrapp
 ### Claude Code
 
 ```bash
-claude mcp add enduraw -e ENDURAW_ACCESS_TOKEN=your_jwt_token -- npx -y github:ploa33/enduraw-MCP
+claude mcp add enduraw -e ENDURAW_ACCESS_TOKEN=your_jwt_token -- npx -y github:JeanPch/enduraw-MCP
 ```
 
 ### Claude Desktop
@@ -37,7 +37,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:ploa33/enduraw-MCP"],
+      "args": ["-y", "github:JeanPch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -55,7 +55,7 @@ Add to `.cursor/mcp.json` in your project root or Cursor MCP settings:
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:ploa33/enduraw-MCP"],
+      "args": ["-y", "github:JeanPch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -73,7 +73,7 @@ Add to `~/.codeium/windsurf/mcp_config.json`:
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:ploa33/enduraw-MCP"],
+      "args": ["-y", "github:JeanPch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -91,7 +91,7 @@ Add to `~/.gemini/config/mcp_config.json`:
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:ploa33/enduraw-MCP"],
+      "args": ["-y", "github:JeanPch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -105,7 +105,7 @@ Add to `~/.gemini/config/mcp_config.json`:
 Run the server directly with your environment variable:
 
 ```bash
-ENDURAW_ACCESS_TOKEN=your_jwt_token npx -y github:ploa33/enduraw-MCP
+ENDURAW_ACCESS_TOKEN=your_jwt_token npx -y github:JeanPch/enduraw-MCP
 ```
 
 The server communicates over stdio using the Model Context Protocol.
@@ -207,7 +207,7 @@ Here are examples of prompts you can use once connected:
 Clone and test locally:
 
 ```bash
-git clone https://github.com/ploa33/enduraw-MCP.git
+git clone https://github.com/JeanPch/enduraw-MCP.git
 cd enduraw-MCP
 npm install
 ```

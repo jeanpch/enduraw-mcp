@@ -31,16 +31,16 @@
     "antigravity",
     "ai"
   ],
-  "author": "ploa33",
+  "author": "JeanPch",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ploa33/enduraw-MCP.git"
+    "url": "git+https://github.com/JeanPch/enduraw-MCP.git"
   },
   "bugs": {
-    "url": "https://github.com/ploa33/enduraw-MCP/issues"
+    "url": "https://github.com/JeanPch/enduraw-MCP/issues"
   },
-  "homepage": "https://github.com/ploa33/enduraw-MCP#readme",
+  "homepage": "https://github.com/JeanPch/enduraw-MCP#readme",
   "engines": {
     "node": ">=20.0.0"
   },
