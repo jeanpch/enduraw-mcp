@@ -25,7 +25,7 @@ MCP server for [Enduraw](https://app.enduraw.co). Unofficial community MCP wrapp
 ### Claude Code
 
 ```bash
-claude mcp add enduraw -e ENDURAW_ACCESS_TOKEN=your_jwt_token -- npx -y github:JeanPch/enduraw-MCP
+claude mcp add enduraw -e ENDURAW_ACCESS_TOKEN=your_jwt_token -- npx -y github:jeanpch/enduraw-MCP
 ```
 
 ### Claude Desktop
@@ -37,7 +37,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:JeanPch/enduraw-MCP"],
+      "args": ["-y", "github:jeanpch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -55,7 +55,7 @@ Add to `.cursor/mcp.json` in your project root or Cursor MCP settings:
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:JeanPch/enduraw-MCP"],
+      "args": ["-y", "github:jeanpch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -73,7 +73,7 @@ Add to `~/.codeium/windsurf/mcp_config.json`:
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:JeanPch/enduraw-MCP"],
+      "args": ["-y", "github:jeanpch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -91,7 +91,7 @@ Add to `~/.gemini/config/mcp_config.json`:
   "mcpServers": {
     "enduraw": {
       "command": "npx",
-      "args": ["-y", "github:JeanPch/enduraw-MCP"],
+      "args": ["-y", "github:jeanpch/enduraw-MCP"],
       "env": {
         "ENDURAW_ACCESS_TOKEN": "your_jwt_token"
       }
@@ -105,7 +105,7 @@ Add to `~/.gemini/config/mcp_config.json`:
 Run the server directly with your environment variable:
 
 ```bash
-ENDURAW_ACCESS_TOKEN=your_jwt_token npx -y github:JeanPch/enduraw-MCP
+ENDURAW_ACCESS_TOKEN=your_jwt_token npx -y github:jeanpch/enduraw-MCP
 ```
 
 The server communicates over stdio using the Model Context Protocol.
@@ -178,7 +178,7 @@ To connect to Enduraw, you need your `ENDURAW_ACCESS_TOKEN` (JWT session token):
 
 | Tool | Parameters | Description |
 |---|---|---|
-| `get_enduraw_form_fatigue` | `days` (default: 180), `sport` (default: 'all') | Official Enduraw Form and Fatigue modeling (CTL, ATL, TSB curves) directly from `/auth/api/activities/form-fatigue/`. Returns official metrics or subscription requirement status (Starter tier) |
+| `get_enduraw_form_fatigue` | `days` (default: 180), `sport` (default: 'all') | Enduraw Form and Fatigue modeling (CTL, ATL, TSB curves). Returns metrics or subscription requirement status (Starter tier) |
 
 ### 7. Notifications (1 tool)
 
@@ -194,7 +194,7 @@ Here are examples of prompts you can use once connected:
 
 - "What is my Critical Speed (Vc) and D' according to Enduraw, and what are my theoretical times on 5k and 10k?"
 - "Analyze my cardiac cost between 10 km/h and 13.5 km/h. How many beats does each km/h cost me?"
-- "Extract the full 3D course elevation profile and official checkpoints for the CCC."
+- "Show the 3D course elevation profile and official checkpoints for the CCC."
 - "Show me all 20 aid stations on the UTMB with their exact kilometer markers and cumulative elevation gain."
 - "What is my climbing VAM profile on 10% vs 20% slopes, and at what gradient does my cadence drop?"
 - "Show me my progression curve on the Half-Marathon and Marathon benchmark distances."
@@ -207,7 +207,7 @@ Here are examples of prompts you can use once connected:
 Clone and test locally:
 
 ```bash
-git clone https://github.com/JeanPch/enduraw-MCP.git
+git clone https://github.com/jeanpch/enduraw-MCP.git
 cd enduraw-MCP
 npm install
 ```
